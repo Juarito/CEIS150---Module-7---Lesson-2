@@ -1,11 +1,15 @@
 I decided to make A repository for some things I learned at devry in CEIS150 - Programming with objects. This repository deals with module 7 lesson 2.
 
+
 listprocessing.py: 
+
 In the first for loop, we are displaying the list using the index value or position within the list. Remember that index values start at 0.
 
 In the second for loop, we display the list using the elements in the list rather than using the index. This is useful information.
 
+
 iterator.py:
+
 Iterators are objects with a collection of items. Iterators use the next() function to return the next value in the list. Iterators only let you go forward through the items one at a time. You can't go backwards or pick a specific item.
 
 Here, we start with our simple shopping list. We use the iter() function which return an iterator.
@@ -14,7 +18,9 @@ In our for loop we use the next() function to get the next value in the list.
 
 Although this is a simple case, you can add iterators to your own classes to make it easy to get the next item.
 
+
 fib.py:
+
 Creating Iterators
 You can add an iterator to your class using the special __iter__() method along with the __next__() method.
 
@@ -28,7 +34,9 @@ Here, we have implemented a simple class which will produce the Fibonacci sequen
 
 In this simplified example, we do not display the initial two numbers, starting with the first generated number.
 
+
 lists.py:
+
 Python supports several types of collections that can be used to store multiple values.
 
 Lists - ordered, changeable, allows duplicates
@@ -45,7 +53,9 @@ We use a for loop to search through the jobDescription list. When the position i
 
 I created a better file for this code. It is under suggestedNewLists.py
 
+
 fibgen.py:
+
 Another way to work with sequences of values is by using a generator. A generator is a special type of function that can return a value then continue running at the next statement the next time the function is called rather than returning to the beginning of the function.
 
 Generators use the yield statement instead of the return statement. Using the yield statement is what turns a regular function into a generator. Like return, yield will send a value back to the calling statement. However, the state of the function is maintained so that it can continue running from where it left off the next time it's called.
@@ -54,7 +64,9 @@ We see here a generator-based example of our simplified Fibonacci number program
 
 Sadly enough, DeVry's code from fibgen.py does not display the fibonacci sequence. However, I have provided a file called suggestedFibGen.py that does.
 
+
 dictionary.py:
+
 Another type of collection supported by Python is the dictionary. A dictionary is a key-value collection. Each value in the list has an associated key, which makes it easy to locate. With a dictionary, the key is similar to the index in a list and each key can only appear once (just as each index value can only appear once in a list).
 
 Here, we have simplified our employee job description program using a dictionary. The key represents the job description and the value represents the employee name. The list is contained within braces {} with keys and values separated by a colon.
@@ -66,7 +78,9 @@ We can update values as well. For example
 
 personnel[searchPosition] = "James Smith"
 
+
 gui.py:
+
 Python has many libraries that can be used to create GUI-based programs. Tkinter is a popular one that is installed in most Python distributions. Tkinter is an interface to the Tcl/Tk GUI toolkit. This toolkit is cross platform, so your GUI applications will work on Windows, Mac, or Linux.
 
 Python also supports popular GUI frameworks such as Gtk, Qt, and wxWidgets. There are many other frameworks that can be used, both cross-platform, as well as those specific to a particular platform, such as Mac, Windows, or Android.
